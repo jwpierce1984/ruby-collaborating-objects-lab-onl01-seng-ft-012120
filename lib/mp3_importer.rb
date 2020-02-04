@@ -10,6 +10,6 @@ class MP3Importer
   end
   
   def import
-    file.each {|fn| }
+    file.each {|fn| Song.new_by_filename(fn)}
   end
 end
