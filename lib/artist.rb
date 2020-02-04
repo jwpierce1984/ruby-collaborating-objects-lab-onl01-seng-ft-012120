@@ -27,4 +27,8 @@ class Artist
     self.all.find {|n| n.name == name} || self.new(name).tap {|artist| artist.save}
   end
   
+  def print_songs
+    
+  end
+  
 end
