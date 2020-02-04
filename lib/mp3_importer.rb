@@ -10,4 +10,6 @@ class MP3Importer
   end
   
   def import
+    file.each {|fn| }
+  end
 end
