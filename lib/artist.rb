@@ -24,7 +24,7 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    self.all.find {|n| n.name == name} || 
+    self.all.find {|n| n.name == name} || self.new.tap {|u| u.name = name}
   end
   
 end
