@@ -16,6 +16,12 @@ class Song
     @@all
   end
   
+  def self.find_by_artist(artist)
+    Song.all.select do | song |
+      song.artist == artist
+    end
+  end
+  
   def self.new_by_filename(filename)
     artist, song = filename.split(" - ")
     new_song = self.new(song)
