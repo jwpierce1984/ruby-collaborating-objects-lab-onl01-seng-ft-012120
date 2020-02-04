@@ -23,4 +23,8 @@ class Song
     new_song.artist_name = artist
     new_song.save
   end
+  
+  def artist_name=(artist)
+    
+  end
 end
