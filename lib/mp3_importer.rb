@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    
+    Dir["/path/to/search/**/*.mp3"]
   end
   
 end
