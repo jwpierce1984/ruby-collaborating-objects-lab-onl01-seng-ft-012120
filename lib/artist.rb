@@ -26,4 +26,6 @@ class Artist
   def self.find_or_create_by_name(name)
     self.all.find {|n| n.name == name} || 
   end
+  
+  def 
 end
