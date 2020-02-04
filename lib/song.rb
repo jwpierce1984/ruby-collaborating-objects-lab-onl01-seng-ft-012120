@@ -24,7 +24,8 @@ class Song
     new_song.save
   end
   
-  def artist_name=(artist)
+  def artist_name=(name)
+    self.
     
   end
 end
